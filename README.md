@@ -1,6 +1,6 @@
 # pretty_toa
 
-Fast convert numbers to strings with thousands separator.
+Rust crate for converting numbers to strings with thousands separator.
 
 It is very fast because it uses itoa/dtoa and stack allocated strings.
 
