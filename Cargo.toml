@@ -6,6 +6,7 @@ description = "Fast convert (using itoa/dtoa) numbers to strings with thousands 
 repository="https://github.com/gabime/pretty_toa"
 keywords = ["format", "itoa", "pretty", "numbers"]
 categories = ["value-formatting"]
+readme = "README.md"
 
 license = "MIT"
 
