@@ -2,7 +2,7 @@
 name = "pretty_toa"
 version = "0.1.0"
 authors = ["gmelman <gmelman1@gmail.com>"]
-description = "Fast convert (using itoa/dtoa) numbers to strings with thousends separator"
+description = "Fast convert (using itoa/dtoa) numbers to strings with thousands separators"
 repository="https://github.com/gabime/pretty_toa"
 keywords = ["format", "itoa", "pretty", "numbers"]
 categories = ["value-formatting"]
