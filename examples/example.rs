@@ -8,8 +8,8 @@ use pretty_toa::ThousandsSep;
 
 fn main() {
     let num = 123_4567;
-    println!("{} {} => ", num, num.thousends_sep());
+    println!("{} {} => ", num, num.thousands_sep());
 
     let num = 123_4567.1234567;
-    println!("{} => {}", num, num.thousends_sep());
+    println!("{} => {}", num, num.thousands_sep());
 }

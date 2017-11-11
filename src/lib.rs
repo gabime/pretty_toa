@@ -17,10 +17,10 @@
 //!
 //! fn main() {
 //!     let num = 123_4567;
-//!     println!("{} => {}", num, num.thousends_sep());
+//!     println!("{} => {}", num, num.thousands_sep());
 //!
 //!     let num  = 123_4567.1234567;
-//!     println!("{} => {}", num, num.thousends_sep());
+//!     println!("{} => {}", num, num.thousands_sep());
 //! }
 //! ```
 
@@ -94,7 +94,7 @@ where
 
 
 pub trait ThousandsSep {
-    fn thousends_sep(self) -> String;
+    fn thousands_sep(self) -> String;
 }
 
 
@@ -104,13 +104,13 @@ pub trait ThousandsSep {
 
 // 8 bits
 impl ThousandsSep for i8 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 impl ThousandsSep for u8 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
@@ -119,52 +119,52 @@ impl ThousandsSep for u8 {
 
 // 16 bits
 impl ThousandsSep for i16 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 impl ThousandsSep for u16 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 // 32 bits
 impl ThousandsSep for i32 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 impl ThousandsSep for u32 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 // 64 bits
 impl ThousandsSep for i64 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 impl ThousandsSep for u64 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 // arch
 impl ThousandsSep for isize {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
 
 impl ThousandsSep for usize {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep(self)
     }
 }
@@ -175,13 +175,13 @@ impl ThousandsSep for usize {
 //
 
 impl ThousandsSep for f32 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep_f(self)
     }
 }
 
 impl ThousandsSep for f64 {
-    fn thousends_sep(self) -> String {
+    fn thousands_sep(self) -> String {
         thousand_sep_f(self)
     }
 }

@@ -11,16 +11,16 @@ use test::Bencher;
 use pretty_toa::ThousandsSep;
 
 #[bench]
-fn thousends_sep_int(b: &mut Bencher) {
-    b.iter(|| 1234567.thousends_sep());
+fn thousands_sep_int(b: &mut Bencher) {
+    b.iter(|| 1234567.thousands_sep());
 }
 
 #[bench]
-fn thousends_sep_f64(b: &mut Bencher) {
-    b.iter(|| 1234567.12345.thousends_sep());
+fn thousands_sep_f64(b: &mut Bencher) {
+    b.iter(|| 1234567.12345.thousands_sep());
 }
 
 #[bench]
-fn thousends_sep_f32(b: &mut Bencher) {
-    b.iter(|| 1234567.12345f32.thousends_sep());
+fn thousands_sep_f32(b: &mut Bencher) {
+    b.iter(|| 1234567.12345f32.thousands_sep());
 }
