@@ -1,0 +1,15 @@
+[package]
+name = "pretty_toa"
+version = "0.1.0"
+authors = ["gmelman <gmelman1@gmail.com>"]
+description = "Fast convert (using itoa/dtoa) numbers to strings with thousends separator"
+
+keywords = ["format", "itoa", "pretty", "numbers"]
+categories = ["value-formatting"]
+
+license = "MIT"
+
+[dependencies]
+num-traits = "^0.1"
+itoa = "^0.3"
+dtoa = "0.4"
